@@ -49,7 +49,7 @@ export const userSlice = createSlice({
   reducers: {
     setFilter: (state, action: PayloadAction<FilterType>) => {
       const { filter, value } = action.payload;
-      state = { ...state, [filter]: value };
+      state[filter] = value;
     },
   },
 
